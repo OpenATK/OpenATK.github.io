@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<!-- Note: this is the Spacelab example template from bootswatch.com -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tillage App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apps for Precision Farm Management.">
+    <meta name="author" content="Aaron Ault">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="../../bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../bootswatch/bootswatch.css" rel="stylesheet">
+
+    <style>
+      section {
+        padding-top: 0px;
+      }
+
+      p.lead {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+
+      #dropdown-menu-link {
+        color: #2D2D2D;
+      }
+      #dropdown-menu-link:hover {
+        color: #F0F0F0;
+      }
+
+    </style>
+  </head>
+
+  <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+
+ <!-- Navbar
+================================================== -->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="http://openagtoolkit.com/">OpenATK</a>
+      <div class="nav-collapse collapse" id="apps-menu">
+        <ul class="nav" id="apps-menu-left">
+          <li><a id="swatch-link" href="https://play.google.com/store/apps/details?id=com.openatk.tillage&hl=en">Download</a></li>
+          <li><a id="swatch-link" href="#developers">Developers</a></li>
+          <li><a id="swatch-link" href="#progress">Progress</a></li>
+          <!-- <li><a id="swatch-link" href="https://groups.google.com/forum/#!forum/openagtoolkit">Mailing List</a></li> -->
+          <li><a id="swatch-link" href="https://github.com/OpenATK"><i class="icon-github icon-large"></i>GitHub</a></li>
+          <li><a id="swatch-link" href="mailto:info@openatk.com">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    
+<!-- <header class="jumbotron subhead" id="overview"> -->
+<div class="row">
+
+<!-- Icon/Info
+ ================================================== -->
+    <div class="span3">
+        <a href="https://play.google.com/store/apps/details?id=com.openatk.trello&hl=en">
+        <img src="../../images/TillageApp-Launcher-Icon-v1.png" style="padding-bottom: 10px;">
+            </a>
+        
+        <div class="well" style="padding-top: 10px;">
+            <p>Version: 1.0 </p>
+            <p>Date: 22-July-2013</p>
+            <p>Requirements: Android 3.0 and above</p>
+            <p>Developer: OpenATK</p>
+        </div>
+    </div>
+    
+<div class="span9">
+<!-- Overview
+ ================================================== -->
+      <h1 style="font-weight: normal">Tillage App</h1>
+      <h3>Description</h3>
+      <br/>
+      <p>The OpenATK Tillage App provides a simple means of recording data pertaining to tillage operations and displaying operation status to the users. The data collected can be used for easy recording of tillage operations for both short- and long-term planning.</p>
+        <p>This app keeps a record of tillage operations for a list of fields with statuses of “Planned”, “Started”, or “Done”.  Also, each record contains the date of last status change, the name of the operator, and comments.  Each field also has an optional associated boundary polygon which is shaded according to the operation status.</p>
+<!-- Screenshots
+ ================================================== -->
+    <section id="Screenshots">
+        <div class="page-header">
+            <h3>Screenshots</h3>
+            <img src="../../images/Screenshot_Tillage_app_field_selected.png" width="324" height="518"/>
+            <img src="../../images/Screenshot_Tillage_app_list_view.png" width="324" height="518"/>
+        </div>
+        
+    </section>
+    
+<!-- #tutorial
+ ================================================== -->
+    <section id="Tutorial">
+        <div class="page-header">
+            <h3>Tutorials</h3>
+            <ul>
+                <li> <a href="help_getting_started.html"> Getting familiar with the Tillage App </a> </li>
+                <li> <a href="help_first_time_adding_new_field.html"> Adding your first field </a> </li>
+                <li> <a href="help_adding_new_field.html"> Adding fields to your farm </a> </li>
+                <li> <a href="help_adding_new_operation_type.html"> Adding a new operation type </a> </li>
+                <li> <a href="help_adding_new_operation_record.html"> Adding a new tillage operation record </a> </li>
+                <li> <a href="help_deleting_operation_record.html"> Removing a tillage operation record </a> </li>
+                <li> <a href="help_adding_new_operator.html"> Adding a new operator </a> </li>
+            </ul>
+            <p class="lead">Data Collected</p>
+            <ul>
+                <li> Employee Name </a> </li>
+                <li> Field Boundaries/Name </a> </li>
+                <li> Type of Tillage </li>
+                <li> Operation Status </li>
+                <li> Photo </li>
+                <li> Comments </li>
+            </ul>            <p class="lead">Trello Board</p>
+            <p>Each app has its own <a href="https://trello.com/b/5m5yG3Cl/openatk-tillage">Trello Board</a>.</p>
+            <p class="lead">Shared Information</p>
+            <ul>
+                <li> Location of Rocks </a> </li>
+            </ul>
+        </div>
+    </section>
+    
+<!-- #developers
+ ================================================== -->
+    <section id="developers">
+        <div class="page-header">
+            <h3>Developers</h3>
+            <p>You can join the <a href="https://groups.google.com/forum/#!forum/openagtoolkit">mailing list</a>,
+            fork us on <a href="https://github.com/OpenATK"><i class="icon-github"></i>GitHub</a>, and
+            you can always <a href="mailto:info@openatk.com">email us</a> for more information.
+            </p>
+            <p>Each app has its own development resources: functional specs, UI mockups, documentation, and code.</p>
+
+            <p class="lead"> Functional Specifications</p>
+            <p>Our development process starts with <a href="https://docs.google.com/document/d/1GCWvzDgZOd23Ho6CQPe6BpqEwABMpypM_1CrfHYlQPY/edit?usp=sharing"> functional specifications</a>.  If you don't know what those are,
+            here's <a href="http://www.joelonsoftware.com/articles/fog0000000036.html">Joel Spolsky to explain it</a>.</p>
+                        
+            <p class="lead">User Interface Mockups</p>
+            <p>We use the web-based software, <a href="https://www.mybalsamiq.com/"> mybalsamiq </a>, to develop the UI mockups for the <a href="https://openatk.mybalsamiq.com/mockups/620355.png?key=673c405081cb0c6adb0527b4c5d49aa98aa5a86a"> Map</a> and <a href="https://openatk.mybalsamiq.com/mockups/623493.png?key=673c405081cb0c6adb0527b4c5d49aa98aa5a86a"> List </a> UIs.</p>
+            
+            <p class="lead"><i class="icon-github"></i>GitHub</p>
+            <p>Source code for the OpenATK Tillage App is available on <a href="https://github.com/OpenATK"><i class="icon-github"></i>GitHub</a>. Don't forget the <a href="https://github.com/OpenATK/android-LibCommon"> Common Libraries</a>.</p>
+            
+            <p class="lead">Ideas for the Tillage App</p>
+            Send a message to the <a href="https://groups.google.com/forum/#!forum/openagtoolkit">mailing list</a> to get some feedback and
+            convince the community to get it on the roadmap.</p>
+            
+        </div>
+    </section>
+    
+<!-- #progress
+ ================================================== -->
+    <section id="progress">
+        <div class="page-header">
+            <h3>Progress</h3>
+            
+            <p class="lead">July 22, 2013</p>
+            <p>We're going live at ASABE AIM 2013!
+            <p class="lead">The Future of the Tillage App</p>
+            <p>More platforms: we're only on Android now.  iOS will come as soon as we get some people to work on it.</p>
+            <p>More cloud storage libraries: we've only got Trello support now.  Dropbox's new
+            <a href="https://www.dropbox.com/developers/datastore">Datastore API</a> has caught our eye and moved them up
+            the list ahead of Google Drive. </p>
+            <p>More support and community: to give this project long-term stamina, we're actively seeking partners
+            and community developers who would like to contribute.</p>
+            <p>More stored information:</p>
+            <ul>
+                <li> Start Time </li>
+                <li> Stop Time </li>
+                <li> Area Covered </li>
+                <li> Fuel Consumption </li>
+            </ul>
+            <p>More shared information:</p>
+            <ul>
+                <li> Field Names and Boundaries </li>
+                <li> Tractor ID </li>
+                <li> Implement ID </li>
+                <li> Location of Hazards </li>
+                <li> Location of Tile Risers </li>
+                <li> Location of Irrigation </li>
+            </ul>
+        </div>
+    </section>
+    
+<!-- #support
+ ================================================== -->
+<section id="support">
+  <div class="page-header">
+    <h3>Support</h3>
+    <p>We are actively seeking contributors for this project and <a href="http://isoblue.org">ISOBlue</a>, so
+    if you like either the concept or any of our apps, please <a href="mailto:info@openatk.com">contact us</a> 
+    for more information.</p>
+
+    <p>A special thanks for all our support this far:
+      <ul>
+        <li>Funding from the USDA's NIFA program</li>
+        <li>App design work by <a href="http://www.ingredientsdesign.com/">Ingredients Design</a></li>
+      </ul></p>
+
+  </div>
+</section>
+
+</div><!-- /container -->
+        </div>
+</div>
+<div class="container">      
+<!-- Footer
+ ================================================== -->
+    <footer id="footer">
+        <p class="pull-right"><a href="#top">Back to top</a></p>
+        Site template modified from <a href="http://bootswatch.com/cosmo/">Bootswatch Cosmo</a>.
+        Site code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.<br/>
+    </footer>
+</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="bootswatch/jquery.smooth-scroll.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootswatch/bootswatch.js"></script>
+
+
+  </body>
+</html>
+

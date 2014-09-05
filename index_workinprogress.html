@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<!-- Note: This is the Cerulean example template from bootswatch.com. -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OpenATK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apps for Agriculture.">
+    <meta name="author" content="Aaron Ault">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="bootswatch/bootswatch.css" rel="stylesheet">
+
+    <style>
+      section {
+        padding-top: 0px;
+      }
+    </style>
+  </head>
+
+  <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+
+  <!-- Navbar
+    ================================================== -->
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/">OpenATK</a>
+        <div class="nav-collapse collapse" id="main-menu">
+          <ul class="nav" id="main-menu-left">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#app">Apps <b class="caret"></b></a>
+              <ul class="dropdown-menu" id="swatch-menu">
+                <li><a href="apps/rock.html">Rock App</a></li>
+                <li><a href="apps/tillage.html">Tillage App</a></li>
+                <li class="devider"></li>
+                <li><a href="apps/Trello.html">Trello App</a></li>
+              </ul>
+            </li>
+            <li><a id="swatch-link" href="#sponsors">Sponsors</a></li>
+            <li><a id="swatch-link" href="https://github.com/OpenATK">GitHub</a></li>
+            <li><a id="swatch-link" href="https://groups.google.com/forum/#!forum/openagtoolkit">Mailing List</a></li>
+            <li><a id="swatch-link" href="https://trello.com/openatk">Trello</a></li>
+            <li><a id="swatch-link" href="mailto:info@openatk.com">Contact</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" id="swatch-link" href="#">Sub-Projects <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a id="swatch-link" href="http://isoblue.org">ISOBlue</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+     </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Masthead
+    ================================================== -->
+    <header class="jumbotron subhead" id="overview">
+      <div class="row">
+        <div class="span7">
+          <h1>Open Ag ToolKit</h1>
+          <p class="lead">Precision Farm Management.</p>
+  
+          <p>We want to make it easier to manage farms, and in the process improve the way farmers
+          are able to collect, store, and use data to grow better food.</p>
+
+          <p>
+            <a href="mailto:info@isoblue.org">Contact us</a> to find a way to participate,
+            fork us on <a href="http://github.com/ISOBlue">GitHub</a>,
+            follow our progress on <a href="https://trello.com/board/development/5178b60dd148d9e53e008011">Trello</a>,
+            and <a href="https://groups.google.com/forum/?fromgroups#!forum/isoblue">join the mailing list</a>.  ISOBlue is part of the
+            <a href="http://openagtoolkit.org">Open Ag ToolKit</a> initiative.
+          </p>
+        </div>
+        <div class="span4 well" style="padding-top: 0px">
+          <section id="news">
+          <h3>News</h3>
+
+          <h5>Press Coverage</h5>
+          The first press release: 
+          <a href="http://www.ideaggroup.com/document/10977394/farmlogs-backs-purdue-universitys-isoblue-project-to-make-precision-ag-data-more-open">here</a>,
+          <a href="http://www.agprofessional.com/news/ISOBlue-to-send-equipment-data-to-smartphones-213321221.html">here</a>,
+          <a href="http://precisionpays.com/2013/06/farmlogs-sponsor-isoblue-project/">here</a>,
+          <a href="http://www.progressiveforage.com/index.php?option=com_content&view=article&id=5040:purdue-university-launches-open-source-project-for-farmers&catid=37:industry-news&Itemid=140">here</a>,
+          and <a href="http://precisionfarmingdealer.com/content/purdues-isoblue-project-aims-make-precision-farming-data-more-open">here</a>.
+
+          <h5>Talking to a Skid Steer</h5>
+          <p>The BeagleBone Black can talk to a skid steer! <a href="http://www.youtube.com/watch?v=Ddp6jbAR58Q#!">Video</a>.
+          Watch it in HD quality to see ISOBUS messages on the terminals.</p>
+
+        </div>
+      </div>
+    </header>
+  
+    <!-- Main content -->
+    <section id="overview">
+      <div class="page-header">
+        <h1>Overview</h1>
+        <p>Many pieces of equipment used on modern farming operations share a standardized communications bus,
+        known as an ISO11783 bus, or <i>ISOBUS</i>.  It is a standard CAN communications bus operating at
+        250 kbps.  The ISO11783 protocol specifies application-layer packet structures which are sent
+        via the CAN Link and Physical layers.</p>
+    
+        <p>Currently, farmers, researchers, entreprenuers, and just about everyone else cannot easily access the massive amounts
+        of mineable data that are generated by tractors, the implements they pull, and sensors in agriculture.  
+        This is due largely to overly proprietary data collection systems provided by tractor manufacturers.  
+        Since these systems on modern tractors generally communicate via a standard ISOBUS architecture, 
+        our goal is to <i>free the data</i> by forwarding it straight off the bus wirelessly to devices capable
+        of doing useful things with it.</p>
+        <p class="text-center">
+          <img src="images/isoblue_data_diagram.png"/><br/>
+          Proposed method of retreiving data from existing ISOBUS compliant machines and implements.
+        </p>
+      </div>
+    </section>
+
+    <section id="progress">
+      <div class="page-header">
+        <h1>Progress</h1>
+        <div class="row">
+  
+          <div class="span8">
+            <p>In an effort to maximize the simplicity of getting your own ISOBlue running, we have limited
+            our hardware choices to components that require no soldering, have pre-built open software
+            libraries, and are relatively inexpensive.  </p>
+
+            <p>To that end, we have chosen the <a href="http://beagleboard.org/Products/BeagleBone%20Black">Beagle Bone Black</a> as the
+            basic foundation for the device.  It's widely available, it's inexpensive ($45), its design is open source, and it
+            runs Linux.</p>
+
+            <p>The BBB has expandable modules known as "capes" for many different 
+            applications.  They simply plug in to the header pins on each side of the BBB.
+            For our purposes, we need a cape that can provide at least two CAN interfaces (an ISOBUS tractor communicates
+            over two CAN buses), one for the implement bus
+            and one for the tractor bus.  <a href="http://www.towertech.it/en/products/hardware/tt3201-can-cape/">This cape</a> has 3 CAN
+            interfaces and works with the <a href="http://en.wikipedia.org/wiki/SocketCAN">socketCAN Linux library</a> on the BBB (79 &euro;, ships
+            internationally).  This will get CAN messages into Linux on the BBB once connected to an ISOBUS diagnostic connector.</p>
+
+            <p class="text-center">
+              <img src="images/can_bbb.png" /><br/>
+              The triple-CAN cape plugged into the top of a BBB.
+            </p>
+
+            <p>To support the ISOBUS protocols that run on top of CAN, we are building a <a href="https://github.com/ISOBlue/isoblue-software">socketCAN module</a> that will
+            handle address claiming, packet filtering, and provide simple interfaces for dealing with common tasks like assembing multi-packet byte
+            streams.  socketCAN runs in the kernel, so communicating over the CAN bus is as simple as writing a normal Linux program that
+            opens a socket.</p>
+
+            <p>To get the ISOBUS data from the Linux program which reads from the socket to a mobile device, the BBB needs 
+            a Bluetooth cape added as well. <a href="http://circuitco.com/support/index.php?title=BeagleBone_TiWi-BLE_w/_Chip_Antenna">This one works well</a>,
+            and supports Bluetooth 4.0, Bluetooth 2.1, and WiFi ($58).
+            The program can then write data to the Bluetooth serial connection.  Finally, 
+            a simple Android library can be used to take the raw ISOBUS data and store it, forward it to the cloud, 
+            process it locally, or do just about anything you want with it.</p>
+
+            <p>Work in the near future will include:
+              <ul>
+                <li>an enclosure that will soon be available on <a href="http://shapeways.com">Shapeways</a>,</li>
+                <li>continued work on the the ISOBUS socketCAN module,</li>
+                <li>a power supply board to convert from the voltage level on the ISOBUS diagnostic connector,</li>
+                <li>and an Android library to use basic ISOBUS data.
+              </ul>
+              Our goal is for the device and enclosure to be ready to collect data for harvest this fall.  A tutorial will
+              be available on this site to walk through the process of setting up your own ISOBLUE device to take data.
+            </p>
+         
+          </div>
+          <div class="span4">
+            <img src="images/bbb.jpg" /><br>
+            <p class="text-center">The Beagle Bone Black.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="documentation">
+      <div class="page-header">
+        <h1>Documentation</h1>
+        There are several facets to the ISOBlue project.  We're currently in the specs development phase.
+        Therefore, there are several functional specifications.  If you are
+        unfamiliar with functional specs, <a href="http://www.joelonsoftware.com/articles/fog0000000036.html">Joel Spolsky</a> is the best person to explain it.
+        <ul>
+          <li><a href="https://docs.google.com/document/d/1e1Zwh11J8NgPeUelKOSSEOov4fEM4cdEqaN1leu4hYU/edit?usp=sharing">Overall Functional Specs</a></li>
+          <li><a href="https://docs.google.com/document/d/1e1Zwh11J8NgPeUelKOSSEOov4fEM4cdEqaN1leu4hYU/edit?usp=sharing">Packet Filter Functional Specs</a></li>
+          <li>Enclosure: No specs yet.</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section id="sponsors">
+      <div class="page-header">
+        <h1>Sponsors</h1>
+        We couldn't do this without the generous support of our sponsors.  A special thanks to all who
+        have contributed, including:
+        <div class="container">
+          <div class="span4 well">
+            <a href="http://farmlogs.com/"><img src="images/farmlogs_white_on_green.jpg"></a><br/>
+            <center>Website: <a href="http://farmlogs.com">http://farmlogs.com</a></center>
+          </div>
+          <div class="span4 well">
+            <center><a href="http://www.purdue.edu/"><img src="images/purdue_logo.png"></a><br/>
+            Website: <a href="http://www.purdue.edu">http://www.purdue.edu</a></center>
+          </div>
+          <div class="span4">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contacts">
+      <div class="page-header">
+        <h1>Contacts</h1>
+        <div class="container">
+          <span class="span4">
+            <address>
+              <strong>Aaron Ault</strong><br/>
+              School of Electrical and Computer Engineering<br/>
+              Purdue University<br/>
+              <a href="mailto:info@isoblue.org">info@isoblue.org</a>
+            </address>
+          </span>
+          <span class="span1"></span>
+          <span class="span4">
+            <address>
+              <strong>Prof. James V. Krogmeier</strong><br/>
+              School of Electrical and Computer Engineering <br/>
+              Purdue University<br/>
+            </address>
+          </span>
+          <span class="span3"</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer">
+      <p class="pull-right"><a href="#top">Back to top</a></p>
+      Site template modified from <a href="http://bootswatch.com/cerulean/">Bootswatch Cerulean</a>.
+      Site code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.<br/>
+    </footer>
+
+  </div><!-- /container -->
+
+
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="bootswatch/js/jquery.smooth-scroll.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootswatch/js/bootswatch.js"></script>
+
+</body>
+</html>
